@@ -1,0 +1,2 @@
+$_mod.def("/jarvisprestidge.github.io$1.0.0/src/components/app-root/index.marko.register",function(o,r,e,i,s){o("/marko$4.10.0/components-browser.marko").register("/jarvisprestidge.github.io$1.0.0/src/components/app-root/index.marko",o("/jarvisprestidge.github.io$1.0.0/src/components/app-root/index.marko"))});
+$_mod.run("/jarvisprestidge.github.io$1.0.0/src/components/app-root/index.marko.register");

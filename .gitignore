@@ -9,9 +9,6 @@ node_modules
 # Transpiled js
 dist
 
-# Static assets
-static
-
 # Generated
 build
 

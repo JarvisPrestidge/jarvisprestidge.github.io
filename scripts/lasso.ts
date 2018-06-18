@@ -17,7 +17,7 @@ const isProduction = !!process.env.NODE_ENV;
 // Configure bundler
 lasso.configure({
     outputDir,
-    urlPrefix: "./",
+    urlPrefix: "./static/",
     minify: isProduction,
     fingerprintsEnabled: isProduction,
     bundlingEnabled: isProduction,
@@ -31,4 +31,4 @@ fs.mkdirSync(outputDir);
 const template = require(sourceDir);
 
 // Render template output to HTML file
-template.render({}, fs.createWriteStream(path.join(outputDir, "index.html"), { encoding: "utf8" }));
+template.render({}, fs.createWriteStream(path.join(projectRoot, "index.html"), { encoding: "utf8" }));

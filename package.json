@@ -1,0 +1,37 @@
+{
+    "name": "jarvisprestidge.github.io",
+    "version": "1.0.0",
+    "description": "Personal profile, avatar, portfolio & blog",
+    "scripts": {
+        "clean": "rm -rf src/css/* static .cache && npm run clean-marko",
+        "clean-marko": "find . -type f -name '*.marko.js' -delete",
+        "build-css": "node-sass src/sass/bulma.scss src/css/bulma.css",
+        "build": "npm run clean && npm run build-css && ts-node scripts/lasso.ts",
+        "dev": "NODE_ENV=development npm run build",
+        "prod": "NODE_ENV=production npm run build"
+    },
+    "keywords": [
+        "marko",
+        "lasso",
+        "bulma"
+    ],
+    "author": "Jarvis Prestidge (jarvisprestidge@gmail.com)",
+    "license": "MIT",
+    "dependencies": {
+        "marko": "^4.4.28",
+        "marko-path-router": "^0.7.3"
+    },
+    "devDependencies": {
+        "@lasso/marko-taglib": "^1.0.10",
+        "@types/lasso": "^2.4.0",
+        "bulma": "^0.7.1",
+        "bulma-extensions": "^1.0.14",
+        "lasso": "^3.1.4",
+        "lasso-marko": "^2.4.0",
+        "node-sass": "^4.9.0",
+        "ts-node": "^6.0.0",
+        "tslint": "^5.9.1",
+        "tslint-config-prettier": "^1.10.0",
+        "typescript": "^2.8.1"
+    }
+}
